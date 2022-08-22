@@ -6,12 +6,14 @@ const incButton = actions[1];
 
 const decrease = event => {
   counterValue -= 1;
-  counterValueInSpan.innerHTML = `<span id="value">${counterValue}</span>`;
+  // counterValueInSpan.innerHTML = `<span id="value">${counterValue}</span>`;
+  counterValueInSpan.textContent = counterValue;
 };
 
 const increase = event => {
   counterValue += 1;
-  counterValueInSpan.innerHTML = `<span id="value">${counterValue}</span>`;
+  // counterValueInSpan.innerHTML = `<span id="value">${counterValue}</span>`;
+  counterValueInSpan.textContent = counterValue;
 };
 
 decButton.addEventListener('click', decrease);
